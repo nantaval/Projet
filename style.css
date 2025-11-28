@@ -243,7 +243,9 @@ h2 {
 }
 
 @media (max-width: 700px) {
-
+body{
+     background-image:url(https://i.pinimg.com/736x/7f/90/7e/7f907eda8ef2952fab9564a888f472f8.jpg);
+}
     .navigation {
 
         margin-bottom: 5%;
@@ -267,4 +269,5 @@ h2 {
 
         font-size: 14px;
     }
+
 }
