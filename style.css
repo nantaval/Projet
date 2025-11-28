@@ -1,0 +1,270 @@
+:root {
+    --couleur-1: rgb(168, 1, 127);
+    --couleur-2: rgb(255, 0, 200);
+    --couleur-3: rgba(255, 187, 187, 0.785);
+    --couleur-4: rgba(168, 1, 126, 0.252);
+    --couleur-5: rgb(255, 255, 255);
+    --couleur-6: black;
+}
+
+body {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    background-image: url(https://www.itl.cat/pngfile/big/187-1877249_pink-sky-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navigation {
+    justify-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: rgba(240, 248, 255, 0.395);
+    margin-bottom: 10%;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+
+}
+
+
+.navigation ul li a {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 80px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+
+    transition: all ease-in-out 500ms;
+    color: var(--couleur-2);
+
+}
+
+.navigation ul li:hover {
+    transform: translateY(-5px);
+    transition: all ease-in-out 500ms;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: "Story Script", sans-serif;
+    color: white;
+}
+
+#section {
+
+    border-radius: 15px;
+    padding: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--couleur-3);
+    transition: 2s;
+
+}
+
+p {
+    color: black;
+    text-align: center;
+}
+
+p:hover {
+    color: white;
+    transition: all ease-in-out 500ms;
+}
+
+footer {
+
+    padding: 20px;
+    margin-top: 20vh;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--couleur-5);
+}
+
+footer p {
+    color: var(--couleur-6);
+}
+
+.apropos {
+    margin-top: 14px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    justify-items: center;
+    background-color: var(--couleur-3);
+    transition: all ease-in 200ms;
+}
+
+.apropos:hover {
+    transform: translateY(-4px);
+    background-color: var(--couleur-4);
+}
+
+.contact {
+
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #ffffffa1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-self: center;
+}
+
+.contact p {
+
+    font-weight: bold;
+    color: var(--couleur-6);
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--couleur-1);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+
+.contact ul li a {
+    text-decoration: none;
+    color: var(--couleur-1);
+    font-size: 18px;
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid var(--couleur-1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+
+.contact ul li a:hover {
+    background-color: var(--couleur-1);
+    color: var(--couleur-5);
+    border-color: var(--couleur-1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.section-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.chart {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+
+    height: auto;
+
+
+    width: 20%;
+    min-width: 220px;
+
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+
+}
+
+
+
+.chart img {
+
+    width: 100%;
+    height: 100%;
+
+
+    object-fit: cover;
+
+
+
+
+
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chart p:hover {
+    color: var(--couleur-6);
+}
+
+.chart:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.chart h2:hover {
+
+
+    text-shadow: 2px 2px 4px var(--couleur-2);
+}
+
+
+
+h2 {
+    padding: 10px 5px;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+}
+
+.footer:hover {
+    color: black;
+}
+
+@media (max-width: 700px) {
+
+    .navigation {
+
+        margin-bottom: 5%;
+
+        padding: 10px 10px;
+    }
+
+
+    .navigation ul {
+
+        gap: 30px;
+
+
+    }
+
+
+    .navigation ul li a {
+
+        padding-bottom: 20px;
+
+
+        font-size: 14px;
+    }
+}
